@@ -5,7 +5,7 @@ import { Roboto_400Regular, Roboto_700Bold } from '@expo-google-fonts/roboto';
 
 import reactotron from './src/config/reactotron';
 import Providers from '@contexts/Providers';
-import Home from '@screens/Home';
+import { Routes } from './src/routes';
 
 if(__DEV__) reactotron.connect();
 
@@ -18,7 +18,7 @@ const [ fontsLoaded ] = useFonts({
   return (
     <Providers>
       <StatusBar style="light" />
-      { fontsLoaded ? <Home /> : <ActivityIndicator size="large" color="white"/>}
+      { fontsLoaded ? <Routes /> : <ActivityIndicator size="large" color="white"/>}
    
     </Providers>
   );
