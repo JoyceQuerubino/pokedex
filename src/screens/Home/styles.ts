@@ -1,5 +1,4 @@
 import { ResumePokemonFormatted } from "@services/pokemon/types.pokemon";
-import { FlatList, FlatListProps } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import styled, { css } from "styled-components/native";
 
@@ -24,13 +23,4 @@ export const HeaderContainer = styled.View`
   width: 100%;
   flex-direction: row;
   justify-content: space-between;
-`;
-
-export const ListCards = styled(
-  FlatList as new (
-    props: FlatListProps<ResumePokemonFormatted>
-  ) => FlatList<ResumePokemonFormatted>
-)`
-  flex: 1;
-  width: 100%;
 `;

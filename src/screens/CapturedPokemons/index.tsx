@@ -2,10 +2,10 @@ import React from "react";
 import { useNavigation } from "@react-navigation/native";
 import { ResumePokemonFormatted } from "@services/pokemon/types.pokemon";
 import { useCapturedPokemons } from "@hooks/useCapturedPokemons";
+import { CapturedContent } from "@screens/CapturedContent";
 import HeaderWithTitle from "@components/HeaderWithTitle";
-import Card from "@components/Card";
 
-import { Container, ListCards } from "./styles";
+import { Container } from "./styles";
 
 export default function CapturedPokemons() {
   const navigation = useNavigation();
@@ -19,23 +19,12 @@ export default function CapturedPokemons() {
   return (
     <Container>
       <HeaderWithTitle title="Captured" />
-      <ListCards
-        data={capturedPokemons}
-        keyExtractor={(pokemon) => String(`${pokemon?.info.id}`)}
-        renderItem={({ item }: { item: ResumePokemonFormatted }) => {
-          return (
-            <Card
-              name={item?.name}
-              image={item?.details?.sprite}
-              color={item?.info?.color}
-              capture={item?.info?.capture_rate}
-              onPress={() => handleNavigation(item)}
-            />
-          );
-        }}
-        numColumns={1}
-        showsVerticalScrollIndicator={false}
-        contentContainerStyle={{ gap: 16 }}
+
+      <CapturedContent
+        capturedPokemons={capturedPokemons}
+        isError={!!error}
+        loading={loading}
+        handleNavigation={handleNavigation}
       />
     </Container>
   );
