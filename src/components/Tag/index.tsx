@@ -3,17 +3,20 @@ import {
   Container,
   Title,
 } from "./styles";
+import { capitalizeFirstLetter } from "@helpers/capitalizedFristLetter";
 
 
 interface TagProps {
-  number: number;
+  text: string;
 }
 
-export default function Tag({ number }: TagProps) {
+export default function Tag({ text }: TagProps) {
+
+  const formattedText = capitalizeFirstLetter(text);
 
   return (
     <Container>
-        <Title>{`Capture Rate: ${number}`}</Title>
+        <Title>{formattedText}</Title>
     </Container>
   );
 }
