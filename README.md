@@ -1,6 +1,5 @@
-<h1 align="center">Coffee App</h1>
 
-![Capa](https://github.com/user-attachments/assets/d0c06e10-f221-4ee2-bea0-225e267666f5)
+![Frame 1000001175](https://github.com/user-attachments/assets/bb413121-867d-458f-b558-da51a53d05ea)
 
 Descriçao
 
@@ -10,7 +9,7 @@ Funcionamento
 
 ## Telas e Preview
 
-![Frame 48095509](https://github.com/user-attachments/assets/871dc8a6-00c7-4938-af18-75e35800da19)
+![Frame 48095509 (1)](https://github.com/user-attachments/assets/d5fd7f51-feec-4525-a4e8-b06a9b35f7d7)
 
 # Sobre o design
 
@@ -80,7 +79,8 @@ Para usar a aplicação
 - Ou copie e cole o link abaixo: https://expo.dev/preview/update?message=fix%3A%20refector%20abstraction%20components&updateRuntimeVersion=1.0.0&createdAt=2024-08-06T14%3A19%3A38.901Z&slug=exp&projectId=734cd460-a071-4cc5-9244-be445d9d4a65&group=9c26342d-b60a-4e8e-9755-8e597475717f
 ```
 
-![image](https://user-images.githubusercontent.com/66806696/134555976-8dcdaa2f-aec7-4551-986d-d6264fe03345.png)
+<img width="419" alt="Captura de Tela 2024-08-06 às 11 20 18" src="https://github.com/user-attachments/assets/cd169bde-4aa3-42da-aaed-ccf660860608">
+
 
 ---
 
