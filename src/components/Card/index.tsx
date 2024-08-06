@@ -14,16 +14,17 @@ interface CardProps {
   image: string;
   color: string;
   capture: number;
+  onPress: () => void;
 }
 
-export default function Card({ name, image, color, capture }: CardProps) {
+export default function Card({ name, image, color, capture, onPress }: CardProps) {
   const formattedName = capitalizeFirstLetter(name);
 
   return (
-    <Container color={color}>
+    <Container color={color} onPress={onPress}>
       <TextsContainer>
         <Title>{formattedName}</Title>
-        <Tag number={capture}/>
+        <Tag text={`Capture Rate: ${capture}`}/>
       </TextsContainer>
 
       <ImageContainer>

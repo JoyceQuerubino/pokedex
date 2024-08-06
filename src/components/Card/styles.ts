@@ -10,7 +10,7 @@ type CardTypes = {
   color?: string;
 };
 
-export const Container = styled.SafeAreaView<CardTypes>`
+export const Container = styled.TouchableOpacity<CardTypes>`
   width: 100%;
   margin-bottom: 16px;
   background-color: ${({ color }) => color && getColorHex(color)};
@@ -36,7 +36,7 @@ export const ImageContainer = styled.View`
   flex: 1;
   justify-content: flex-end;
   background-color: rgba(255, 255, 255, 0.4);
-  border-radius: 200%;
+  border-radius: 200px;
 `;
 
 export const ImageItem = styled.Image`
