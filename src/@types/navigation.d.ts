@@ -7,6 +7,7 @@ export declare global {
             infoDetails: {
                 pokemon: ResumePokemonFormatted;
             }
+            capturedPokemons: undefined;
         }
     }
 }
