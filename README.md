@@ -31,22 +31,20 @@ Obs.: Ao invés de utilizar os Hooks personalizados para as chamadas da API, pod
 Da mesmo forma, poderia ter utiliza o Zustand e armazenado diretamente no estado o valor do asyncStorage, com o middleware do Zustand persist, mas preferi criar diretamente no asyncstorage e separar as funções tratadas nos helpers.
 
 ### Api
-
-For the API structure, I separated the code into services to facilitate maintenance and ensure single responsibilities. I also divided the code into "scopes" and used the Factory Design Pattern to ease changes in case the consumed API is modified. For security and ease of change, I also added the BASE_URL in the .env file.
-
-I chose to use the Axios library for easy API connection and the React Query library (now called Tanstack) for easy API consumption and cache control, one of the most interesting features of this tool. In the useListCoffees hook, I added a select parameter, which keeps the cached data on the app screen when a refetch is performed and only updates it if there are changes after making the GET request. This way, the user experiences a smooth application flow and avoids unnecessary loading.
+Para a estrutura da API, separei o código em serviços para facilitar a manutenção e garantir responsabilidades únicas. Também dividi o código em “escopos” e utilizei o Factory Design Pattern para facilitar alterações caso a API consumida seja modificada. Para segurança e facilidade de alteração, também adicionei BASE_URL no arquivo .env e optei por utilizar a biblioteca Axios para facilitar a conexão da API e criei hooks para fazer as chamadas dos dados.
 
 ### Dificuldades enfrentadas
 
 ### Testes
+Apliquei alguns testes unitários para componentes, screens e helpers, gostaria de ter aplicado mais alguns testes, porém iniciei o teste no final de doming, e acabei não tendo tempo de aplicar todos os testes em toda a aplicação. Para organização, separei todos eles na pasta “testes” e utilizei a biblioteca Jest.js para desenvolvê-los, seguindo o padrão Triple A (Arrange, Act, Assert).
 
-For all components and helpers, I applied unit tests, and for the screen, I created an integration test. For organization, I separated all of them into the "tests" folder and used the Jest.js library to develop them, following the Triple A pattern (Arrange, Act, Assert).
+A cobertura de testes para componentes, screens e helpers.
 
-(\*\*\* add a print)
+<img width="1405" alt="Captura de Tela 2024-08-06 às 15 47 27" src="https://github.com/user-attachments/assets/2fb54aa3-190b-4ef0-8604-8f95ed754d2c">
 
-A cobertura de testes para componentes, screens e helpers ficou em 100%.
+<img width="1406" alt="Captura de Tela 2024-08-06 às 15 47 41" src="https://github.com/user-attachments/assets/de8a1f2b-ab8e-4a77-9565-fc9c4d887d3a">
 
-(\*\* add prints testes)
+<img width="1405" alt="Captura de Tela 2024-08-06 às 15 47 54" src="https://github.com/user-attachments/assets/d5c33030-9ce0-4040-b195-97a5e9d57769">
 
 ## 🛠 Tecnologias utilizadas
 
