@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { testID } from "@tests/constants/testId";
 import { Container, Input } from "./styles";
 
 interface SearchInputProps {
@@ -16,6 +17,7 @@ const SearchInput: React.FC<SearchInputProps> = ({ onSearch }) => {
   return (
     <Container>
       <Input
+        testID={testID.search_input}
         placeholder="Search Pokémon..."
         value={query}
         placeholderTextColor="white"

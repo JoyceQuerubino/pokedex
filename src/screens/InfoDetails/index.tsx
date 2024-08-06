@@ -22,7 +22,6 @@ import {
   DescriptionContent,
 } from "./styles";
 
-
 export default function InfoDetails() {
   const { params } = useRoute();
   const { pokemon } = params as { pokemon: ResumePokemonFormatted };

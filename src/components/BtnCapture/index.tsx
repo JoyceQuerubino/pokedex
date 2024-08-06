@@ -1,9 +1,6 @@
 import React from "react";
-import {
-  Container,
-  ImagePNG,
-  ImageEmptyPNG,
-} from "./styles";
+import { testID } from "@tests/constants/testId";
+import { Container, ImagePNG, ImageEmptyPNG } from "./styles";
 
 interface BtnCaptureProps {
   onPress: () => void;
@@ -11,10 +8,13 @@ interface BtnCaptureProps {
 }
 
 export default function BtnCapture({ onPress, isCaptured }: BtnCaptureProps) {
-
   return (
-      <Container onPress={onPress}>
-        {isCaptured ? <ImagePNG /> : <ImageEmptyPNG />}
-      </Container>
+    <Container testID={testID.btn_capture} onPress={onPress}>
+      {isCaptured ? (
+        <ImagePNG testID={testID.captured_image} />
+      ) : (
+        <ImageEmptyPNG testID={testID.no_captured_image} />
+      )}
+    </Container>
   );
 }
