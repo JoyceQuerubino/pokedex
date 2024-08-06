@@ -1,4 +1,4 @@
-export const getColorHex = (colorName) => {
+export const getColorHex = (colorName: string) => {
     switch (colorName.toLowerCase()) {
       case 'black':
         return '#1a1a1a'; 
