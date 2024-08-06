@@ -3,6 +3,7 @@ export default {
       BACKGROUND: '#272727',
       LIGHT: '#FFFFFF',
       GRAY_500: '#29292E',
+      GRAY_400: '#434343',
       GRAY_100: '#E1E1E6'
     },
 

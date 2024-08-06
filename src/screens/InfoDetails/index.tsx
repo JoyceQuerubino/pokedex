@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useRoute } from "@react-navigation/native";
+import { checkIfCaptured, handleCapture } from "@helpers/pokemonCaptured";
 import { ResumePokemonFormatted } from "@services/pokemon/types.pokemon";
 import { capitalizeFirstLetter } from "@helpers/capitalizedFristLetter";
 import Header from "@components/Header";
@@ -21,24 +22,34 @@ import {
   DescriptionContent,
 } from "./styles";
 
-interface InfoDetailsProps {}
 
-export default function InfoDetails({}: InfoDetailsProps) {
+export default function InfoDetails() {
   const { params } = useRoute();
   const { pokemon } = params as { pokemon: ResumePokemonFormatted };
 
-  console.log("AQUI 12", pokemon);
+  const [isCaptured, setIsCaptured] = useState(false);
 
   const formattedName = capitalizeFirstLetter(pokemon.name);
   const pokeTypes = pokemon.details.types;
 
-  const handleCapture = () => {
-    console.log("AAA");
+  useEffect(() => {
+    const checkPokemonCaptured = async () => {
+      const isPokemonCaptured = await checkIfCaptured(pokemon);
+      setIsCaptured(isPokemonCaptured);
+    };
+
+    checkPokemonCaptured();
+  }, [pokemon]);
+
+  const handlePokemonCapture = async () => {
+    await handleCapture(pokemon, isCaptured);
+    setIsCaptured(!isCaptured);
   };
 
+  
   return (
     <Container>
-      <Header onPress={handleCapture} />
+      <Header isCaptured={isCaptured} onPress={handlePokemonCapture} />
       <Content color={pokemon.info.color}>
         <Title>{formattedName}</Title>
         <TagsContainers>

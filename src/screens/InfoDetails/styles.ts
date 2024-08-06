@@ -81,7 +81,7 @@ export const DescriptionContent = styled.View`
   padding: 12px;
   border-radius: 16px;
   margin-top: 16px;
-  background-color: #434343
+  background-color: ${({ theme }) => theme.COLORS.GRAY_400};
 `;
 
 export const SubTitle = styled.Text`

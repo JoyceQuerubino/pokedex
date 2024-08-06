@@ -5,7 +5,7 @@ import { transformPokemonListResponse } from '@services/pokemon/factories/listPo
 import { transformPokemonSpeciesResponse } from '@services/pokemon/factories/speciesPokemonFactory';
 import { transformPokemonDetailsResponse } from '@services/pokemon/factories/detailsPokemonsFactory';
 
-const LIMIT = 10;
+const LIMIT = 25;
 const OFFSET = 0;
 
 export const fetchPokemonListService = async ({

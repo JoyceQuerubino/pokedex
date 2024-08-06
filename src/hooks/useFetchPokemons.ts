@@ -41,7 +41,7 @@ const useFetchPokemons = () => {
   };
 
   const loadMore = () => {
-    if (nextUrlRef.current) {
+    if (!loading && nextUrlRef.current) {
       loadPokemons();
     }
   };

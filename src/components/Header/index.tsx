@@ -1,21 +1,19 @@
 import React from "react";
 import { useNavigation } from "@react-navigation/native";
+import BtnCapture from "@components/BtnCapture";
 import {
   Container,
-  ImageContainer,
-  ImagePNG,
-  ImageEmptyPNG,
   IconButton,
   Icon,
 } from "./styles";
 
+
 interface HeaderProps {
   onPress: () => void;
+  isCaptured: boolean;
 }
 
-export default function Header({ onPress }: HeaderProps) {
-  const isFavorite = false;
-
+export default function Header({ onPress, isCaptured }: HeaderProps) {
   const navigation = useNavigation();
 
   const handlePress = () => {
@@ -28,9 +26,7 @@ export default function Header({ onPress }: HeaderProps) {
         <Icon name="arrowleft"/>
       </IconButton>
 
-      <ImageContainer onPress={onPress}>
-        {isFavorite ? <ImagePNG /> : <ImageEmptyPNG />}
-      </ImageContainer>
+     <BtnCapture onPress={onPress} isCaptured={isCaptured} />
     </Container>
   );
 }
