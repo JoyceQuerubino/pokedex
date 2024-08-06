@@ -7,9 +7,13 @@ Descriçao
 
 Funcionamento
 
-## Telas e Preview
+## Telas
 
 ![Frame 48095509 (1)](https://github.com/user-attachments/assets/d5fd7f51-feec-4525-a4e8-b06a9b35f7d7)
+
+## Preview 
+![Gravação de Tela 2024-08-06 às 01 06 30 (1)](https://github.com/user-attachments/assets/ffd56127-8805-4e48-a75b-9ec3fb3aaa2f)
+
 
 # Sobre o design
 
