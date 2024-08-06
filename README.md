@@ -1,8 +1,6 @@
 ![Frame 1000001175](https://github.com/user-attachments/assets/bb413121-867d-458f-b558-da51a53d05ea)
 
-Aplicativo simples com uma listagem de Pokemons, para capturar e descobrir!
-
-## Funcioanamento?
+## Funcionamento?
 
 O aplicativo Pokedex, deve apresentar uma listagem paginada de todos os pokemons conforme recebidos da [api do pokemon](https://pokeapi.co/). Nesta listagem devem ser apresentados o nome, foto e o nível de dificuldade de captura, sendo possível pesquisar os pokemons pelo componente de input. Além disso, ao clicar em um card da listagem outras informações como especie, type e habilidades devem ser apresentadas e nesta tela, deve ser possível "capturar" um pokemon ao clicar no icone da pokebola e os pokemons capturados são armazenados no AsyncStorage do dispositivo, permitindo manter os dados ou fechar o app.
 
