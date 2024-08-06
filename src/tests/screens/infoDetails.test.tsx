@@ -1,9 +1,9 @@
 import React from "react";
-import { screen, fireEvent, waitFor } from "@testing-library/react-native";
+import { screen } from "@testing-library/react-native";
 import { mockResumePokemonFormatted } from "@tests/__mocks__/pokemons";
 import { renderWithProvider } from "@tests/config/renderWithProvider";
 import InfoDetails from "@screens/InfoDetails";
-import { checkIfCaptured, handleCapture } from "@helpers/pokemonCaptured";
+import { checkIfCaptured } from "@helpers/pokemonCaptured";
 import { capitalizeFirstLetter } from "@helpers/capitalizedFristLetter";
 
 import { testID } from "@tests/constants/testId";
