@@ -25,6 +25,17 @@
     },
     "plugins": [
       "expo-font"
-    ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "734cd460-a071-4cc5-9244-be445d9d4a65"
+      }
+    },
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/734cd460-a071-4cc5-9244-be445d9d4a65"
+    }
   }
 }
