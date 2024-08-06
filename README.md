@@ -12,12 +12,13 @@ Funcionamento
 
 # Sobre o design
 
-[Frame 48095509 (1)](https://github.com/user-attachments/assets/d5fd7f51-feec-4525-a4e8-b06a9b35f7d7)
-
 - Criei um design simples, mantendo os componentes de forma arredondada e usando multiplos de 4 em todos os componentes;
 - Criei um thema personalizado para facilitar a reutilizaçao de código e organização, no qual separei as cores, tamanhos e fontes utilizadas no app.
 - Criei uma função de cores personalizada, visto que as cores retornadas pela api do Pokemon, não eram atraentes. Eu poderia ter deixado o app mais performático ao utilizar a lib react-native-image-colors para pegar a cor predominante de uma image, ao invés de chamar um outro endpoint que retorna as cores, porém teria que ejjetar o expo e a fim de facilitar a analise deste teste, preferi usar o expo Go e adicionar o QRCode público neste readme.
 - Não utilizei nenhuma lib de componentes prontos de UI, preferi criar meus próprios componentes personalizados usando o styled-componentes.
+
+![Frame 48095509 (1)](https://github.com/user-attachments/assets/72607a90-9b34-46eb-85d6-d4654e5b6f91)
+
 
 ## Estrutura do app e desenvolvimento
 
