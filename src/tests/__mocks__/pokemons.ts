@@ -267,5 +267,3 @@ export const mockResumePokemonsFormatted: ResumePokemonFormatted[] = [
     }
   }
 ];
-
-
